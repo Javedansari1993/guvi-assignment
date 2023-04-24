@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/profile.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to your profile page!</h1>
+		<div class="user-info">
+			<p><strong>email:</strong> <span id="email"></span></p>
+			<p><strong>Age:</strong> <span id="age"></span></p>
+			<p><strong>Date of Birth:</strong> <span id="dob"></span></p>
+			<p><strong>Contact:</strong> <span id="contact"></span></p>
+		</div>
+		<div class="update-form">
+			<h2>Update your information</h2>
+			<form id="update-form">
+				<div class="form-group">
+					<label for="age">Age:</label>
+					<input type="text" class="form-control" id="age-input" name="age">
+				</div>
+				<div class="form-group">
+					<label for="dob">Date of Birth:</label>
+					<input type="date" class="form-control" id="dob-input" name="dob">
+				</div>
+				<div class="form-group">
+					<label for="contact">Contact:</label>
+					<input type="text" class="form-control" id="contact-input" name="contact">
+				</div>
+				<button type="submit" class="btn btn-primary">Update</button>
+			</form>
+		</div>
+        <br/>
+		<div class="logout">
+			<button id="logout-btn" class="btn btn-danger">Log out</button>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./js/profile.js"></script>
+</body>
+</html>
